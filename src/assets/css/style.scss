@@ -1,0 +1,65 @@
+html{ font-size: 20px /*no*/ }
+
+.flex {
+	display: flex;
+}
+
+.flex-item {
+	flex: 1
+}
+
+.flex-align-items {
+	align-items: center
+}
+
+.icon {
+	width: .9rem;
+	height: .9rem;
+	vertical-align: middle;
+	display: inline-block;
+	&.close {
+		@include setbackground('../../../static/images/close.png')
+	}
+	&.file-send {
+		@include setbackground('../../../static/images/filesend.png')
+	}
+	&.circle {
+	  width: .4rem;
+	  height: .4rem;
+	  cursor: pointer;
+	}
+}
+
+.icon.wechat {
+	@include setbackground('../../../static/images/wechat.png')
+}
+
+::-webkit-input-placeholder{
+	color: $levelThreeTextColor
+}
+:-moz-placeholder{
+	color: $levelThreeTextColor
+}
+::-moz-placeholder{
+	color: $levelThreeTextColor
+}
+:-ms-input-placeholder{
+	color: $levelThreeTextColor
+}
+
+.dialog-item {
+	span, p, div {
+		color: $white!important
+	}
+}
+
+.place-holder {
+  color: $levelThreeTextColor
+}
+
+
+@media screen and (max-height: 960px) {
+	html {
+		font-size: 16px
+	}
+}

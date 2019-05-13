@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>vue-single-optimize</title>
+    <link rel="stylesheet" type="text/css" href="./static/css/reset.min.css" />
+    <link rel="stylesheet" type="text/css" href="static/js/malihu-custom-scrollbar/jquery.mCustomScrollbar.css" />
+    <script src="https://cdn.bootcss.com/vue/2.5.13/vue.min.js"></script>
+    <script src="https://cdn.bootcss.com/vuex/3.0.1/vuex.min.js"></script>
+  	<script src="https://cdn.bootcss.com/vue-router/3.0.1/vue-router.min.js"></script>
+    <script src="https://unpkg.com/flyio/dist/fly.min.js"></script>
+    <script src="https://static.kf.com/cdn/js/jquery.min.js"></script>
+    <script src="static/js/malihu-custom-scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+    <script src="./static/js/vendor.dll.js"></script>
+  </body>
+</html>
+<script>
+  (function($){
+    $(window).on("load", function(){
+        $(".sessionlist").mCustomScrollbar({
+            axis: "y",
+            scrollButtons: {enable: false},
+            theme: "dark",
+            scrollbarPosition: "inside",
+            autoHideScrollbar: true,
+            alwaysShowScrollbar: false
+        });
+    });
+  })(jQuery);
+</script>
